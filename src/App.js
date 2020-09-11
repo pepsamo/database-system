@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header/Header.component';
+import Main from './components/main/main-component';
+import Searchbar from './components/searchbar/Searchbar.component';
+import { CardsContainer } from './components/cards-container/CardsContainer.component';
+import { OrderMenu } from './components/order-menu/OrderMenu';
+import { useDispatch } from 'react-redux';
+import useFetch from './effects/fetch-effect.effect';
+import CardList from './components/cardlist/CardList';
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+  const users = useFetch('http://localhost:3000/users', dispatch);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Main>
+        <Searchbar />
+        <OrderMenu />
+        <CardsContainer>
+          <CardList users = {users} />
+        </CardsContainer>
+      </Main>
+    </>
   );
-}
-
+};
 export default App;

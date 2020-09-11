@@ -1,0 +1,44 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John",
+            "lastname": "Doe",
+            "birthdayDate": "20/10/2020",
+            "city": "Paris",
+            "address": "Boulevard 16"
+        },
+        {
+            "id": 2,
+            "name": "Jonny",
+            "lastname": "Duff",
+            "birthdayDate": "05/01/1940",
+            "city": "Washington D.C.",
+            "address": "Yardfall Street 18/A"
+        },
+        {
+            "id": 3,
+            "name": "Carolina",
+            "lastname": "Mucci",
+            "birthdayDate": "14/11/1998",
+            "city": "Firenze",
+            "address": "Via Dante, 14"
+        },
+        {
+            "id": 4,
+            "name": "Pablo",
+            "lastname": "Murierte",
+            "birthdayDate": "25/10/1955",
+            "city": "Madrid",
+            "address": "via Dos Santos, 4/5"
+        },
+        {
+            "id": 5,
+            "name": "Yokozuna",
+            "lastname": "Kawasaki",
+            "birthdayDate": "24/08/2003",
+            "city": "Tokio",
+            "address": "Fokushi Tozuka, 206"
+        }
+    ]
+}
